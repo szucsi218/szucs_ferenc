@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitöltő lap</title>
+    <link rel="stylesheet" href="szucs_ferenc.css">
+</head>
+<body>
+    <fieldset>
+        <select name="megszolitas" id="megszolitas">
+            <option value="doktor">Doktor</option>
+            <option value="idosebb">Idősebb</option>
+            <option value="ifjabb">Ifjabb</option>
+            <option value="ozvegy">Özvegy</option>
+        </select><br>
+        <label for="nev">Neve:</label>
+        <input type="text" id="nev" name="nev" placeholder="Minta János" max="50" required><br>
+        <label for="jelszo">Jelszó:</label>
+        <input type="password" id="jelszo" name="jelszo" min="6" required/><br>
+        <label for="nem">Neme:</label>
+        <select name="neme" id="nem">
+            <option value=""></option>
+            <option value="ferfi">Férfi</option>
+            <option value="no">Nő</option>
+        </select><br>
+        <label for="szuletesiDatum">Születési dátum:</label>
+        <input type="date" id="szuletesiDatum" name="szuletesiDatum" min="1900-01-01" /><br>
+        <label for="emailAddress">Email cím:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required/><br>
+        <label for="hirlevel">Hírlevelet kérek:</label>
+        <input type="checkbox" id="hirlevel" name="hirlevel" required/><br>
+        <label for="egyeb">Egyéb közlendő:</label>
+        <textarea cols="40" rows="5" id="egyeb"></textarea><br>
+        <input type="submit" id="feldolgozasalatt" name="feldolgozasalatt">
+        <input type="reset">
+    </fieldset>
+</body>
+</html>
